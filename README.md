@@ -10,10 +10,12 @@ abandon these ways
 create an applicationContext in /config
 update web.xml and create http-servlet.xml
 
-> //this way would create beans again
+//this way would create beans again
+
 > ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");  
 > Bean myBean = ctx.getBean("testBean");  
 
-> //load current beans
+//load current beans
+
 > ApplicationContext ctx = ContextLoader.getCurrentWebApplicationContext();  
 > ctx.getBean("testBean"); 
