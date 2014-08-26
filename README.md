@@ -19,3 +19,6 @@ update web.xml and create http-servlet.xml
 
 > ApplicationContext ctx = ContextLoader.getCurrentWebApplicationContext();  
 > ctx.getBean("testBean"); 
+
+
+It could create beans by implementing the applicationContextAware.
