@@ -10,15 +10,18 @@ abandon these ways
 create an applicationContext in /config
 update web.xml and create http-servlet.xml
 
+``` java
 //this way would create beans again
 
-> ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");  
-> Bean myBean = ctx.getBean("testBean");  
+ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");  
+Bean myBean = ctx.getBean("testBean");  
+```
 
+``` java
 //load current beans
 
-> ApplicationContext ctx = ContextLoader.getCurrentWebApplicationContext();  
-> ctx.getBean("testBean"); 
-
+ApplicationContext ctx = ContextLoader.getCurrentWebApplicationContext();  
+ctx.getBean("testBean"); 
+```
 
 It could create beans by implementing the applicationContextAware.
