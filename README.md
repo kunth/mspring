@@ -1,6 +1,8 @@
 mspring
 =======
 
+> This file has been created because the author wanted to note something down when using spring in MS.
+
 abandon these ways
 
 [http://stackoverflow.com/questions/129207/getting-spring-application-context](http://stackoverflow.com/questions/129207/getting-spring-application-context)
